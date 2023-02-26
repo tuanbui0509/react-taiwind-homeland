@@ -8,7 +8,7 @@ const HouseContextProvider = ({ children }) => {
   const [houses, setHouses] = useState(housesData);
   const [country, setCountry] = useState('Location (any)');
   const [countries, setCountries] = useState([]);
-  const [property, setProperty] = useState('Place type (any)');
+  const [property, setProperty] = useState('Place Type (any)');
   const [properties, setProperties] = useState([]);
   const [price, setPrice] = useState('Price Range (any)');
   const [loading, setLoading] = useState(false);
@@ -25,8 +25,7 @@ const HouseContextProvider = ({ children }) => {
       return house.type;
     })
     // remove duplicate
-    const uniqueProperty = ['Place type (any)', ...new Set(allProperties)];
-    console.log(uniqueProperty);
+    const uniqueProperty = ['Place Type (any)', ...new Set(allProperties)];
     setProperties(uniqueProperty);
   }, [])
 

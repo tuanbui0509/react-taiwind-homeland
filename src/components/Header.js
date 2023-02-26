@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/img/logo.svg'
 const Header = () => (
-  <header className='py-6 mb-12 border-b border-gray-500'>
+  <header className='py-6 mb-12 border-b border-gray-300'>
     <div className='container mx-auto flex justify-between items-center'>
       {/* logo */}
       <Link to='/'><img src={Logo} alt='' /></Link>
